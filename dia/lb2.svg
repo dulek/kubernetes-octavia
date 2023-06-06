@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="36cm" height="27cm" viewBox="137 398 707 523" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffff00" x="138.95" y="620" width="113.1" height="80"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="138.95" y="620" width="113.1" height="80"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:700" x="195.5" y="664.39">
+      <tspan x="195.5" y="664.39">Loadbalancer</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #1e90ff" x="480" y="400" width="363" height="120"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="480" y="400" width="363" height="120"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="661.5" y="465.683">
+      <tspan x="661.5" y="465.683"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffc0cb" x="460" y="440" width="129" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="460" y="440" width="129" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:700" x="524.5" y="463.39">
+      <tspan x="524.5" y="463.39">NodePort</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #1e90ff" x="480" y="600" width="363" height="120"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="480" y="600" width="363" height="120"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="661.5" y="665.683">
+      <tspan x="661.5" y="665.683"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffc0cb" x="460" y="640" width="129" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="460" y="640" width="129" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:700" x="524.5" y="663.39">
+      <tspan x="524.5" y="663.39">NodePort</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #1e90ff" x="480" y="800" width="363" height="120"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="480" y="800" width="363" height="120"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="661.5" y="865.683">
+      <tspan x="661.5" y="865.683"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffc0cb" x="460" y="840" width="129" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="460" y="840" width="129" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:700" x="524.5" y="863.39">
+      <tspan x="524.5" y="863.39">NodePort</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x1="252.05" y1="620" x2="460" y2="459"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #ff0000" x1="252.05" y1="660" x2="445.792" y2="659.068"/>
+    <polygon style="fill: #ff0000" points="453.292,659.032 443.316,664.08 445.792,659.068 443.268,654.08 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #ff0000" points="453.292,659.032 443.316,664.08 445.792,659.068 443.268,654.08 "/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x1="249.872" y1="700.908" x2="460" y2="859"/>
+  <g>
+    <rect style="fill: #90ee90" x="660" y="640" width="80" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="660" y="640" width="80" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:700" x="700" y="664.39">
+      <tspan x="700" y="664.39">Pod</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #90ee90" x="660" y="840" width="80" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="660" y="840" width="80" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:700" x="700" y="864.39">
+      <tspan x="700" y="864.39">Pod</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x1="589.998" y1="859.478" x2="661.5" y2="860"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #ff0000" x1="589" y1="659" x2="647.293" y2="659.804"/>
+    <polygon style="fill: #ff0000" points="654.792,659.907 644.724,664.769 647.293,659.804 644.862,654.77 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #ff0000" points="654.792,659.907 644.724,664.769 647.293,659.804 644.862,654.77 "/>
+  </g>
+  <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" d="M 460,459 A 260,260 0 0 0 460,659"/>
+  <g>
+    <path style="fill: #000000" d="M 630.391 760.938 C 636.328,760.938 640.703,756.562 640.703,750.312 C 640.703,744.062 636.328,740 630.391,740 C 624.453,740 620.078,744.062 620.078,750.312 C 620.078,756.562 624.453,760.938 630.391,760.938 L 630.391,760.938z"/>
+    <path style="fill: #000000" d="M 659.141 760.938 C 665.078,760.938 669.766,756.562 669.766,750.312 C 669.766,744.062 665.078,740 659.141,740 C 653.203,740 648.828,744.062 648.828,750.312 C 648.828,756.562 653.203,760.938 659.141,760.938 L 659.141,760.938z"/>
+    <path style="fill: #000000" d="M 687.891 760.938 C 693.828,760.938 698.516,756.562 698.516,750.312 C 698.516,744.062 693.828,740 687.891,740 C 682.266,740 677.578,744.062 677.578,750.312 C 677.578,756.562 682.266,760.938 687.891,760.938 L 687.891,760.938z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke-linecap: round; stroke: #000000" d="M 630.391 760.938 C 636.328,760.938 640.703,756.562 640.703,750.312 C 640.703,744.062 636.328,740 630.391,740 C 624.453,740 620.078,744.062 620.078,750.312 C 620.078,756.562 624.453,760.938 630.391,760.938 L 630.391,760.938"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke-linecap: round; stroke: #000000" d="M 659.141 760.938 C 665.078,760.938 669.766,756.562 669.766,750.312 C 669.766,744.062 665.078,740 659.141,740 C 653.203,740 648.828,744.062 648.828,750.312 C 648.828,756.562 653.203,760.938 659.141,760.938 L 659.141,760.938"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke-linecap: round; stroke: #000000" d="M 687.891 760.938 C 693.828,760.938 698.516,756.562 698.516,750.312 C 698.516,744.062 693.828,740 687.891,740 C 682.266,740 677.578,744.062 677.578,750.312 C 677.578,756.562 682.266,760.938 687.891,760.938 L 687.891,760.938"/>
+  </g>
+</svg>
