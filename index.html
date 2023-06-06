@@ -113,6 +113,7 @@ template: section_layout
 * Each LB is a VM with HAProxy
 * Slow to create or update
 * No source IP preservation
+  * HTTP header or PROXY protocol can be used
 ]
 --
 .right-column[
@@ -120,10 +121,14 @@ template: section_layout
 * *Secondary* implementation
 * LBs implemented using underlying Neutron OVN instance
 * Fast to configure
-* Source IP preservation
+* Source IP preservation by default
 * Functional gaps
 
-TODO: How to enable in cloud provider
+```ini
+[LoadBalancer]
+lb-provider = ovn
+lb-method = SOURCE_IP_PORT
+```
 ]
 
 ---
@@ -145,16 +150,23 @@ creation is a must!**
 ---
 
 # LoadBalancer Services
-## Simple case
+## Simple, default case
 
 .left-column[![LB2](dia/lb2.svg)]
 
 ---
 
 # LoadBalancer Services
-## Redirection case
+## Redirection, default case
 
 .left-column[![LB3](dia/lb3.svg)]
+
+.right-column[
+* `externalTrafficPolicy=Cluster`
+  * Better traffic spread
+  * May cause another hop
+  * Source IP is lost
+]
 
 ---
 
@@ -165,9 +177,10 @@ creation is a must!**
 --
 
 .right-column[
-* Considerations:
+* `externalTrafficPolicy=Local`
   * Source IP preservation
-  * Balancing traffic spread
+  * No additional hops
+  * Worse traffic spread
 ]
 
 ---
@@ -186,7 +199,9 @@ creation is a must!**
 --
 
 .right-column[
-* Amphora **does not** preserve source IP
+* Amphora **does not** preserve source IP by default
+  * `loadbalancer.openstack.org/x-forwarded-for` annotation for HTTP
+  * `loadbalancer.openstack.org/proxy-protocol` to use PROXY protocol
 * OVN-Octavia does, but:
   * It only supports health monitors starting from Wallaby
 ]
