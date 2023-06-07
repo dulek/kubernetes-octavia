@@ -379,6 +379,30 @@ https://that.guru/blog/deploying-metallb-on-openstack-part-2/
 
 ---
 
+# Summary
+
+* **Don't use in-tree cloud-provider-openstack.**
+--
+
+* Amphora:
+    * High resource consumption.
+    * K8s compatibility.
+--
+* OVN:
+    * Fast, low resource consumption.
+    * K8s compatibility is *we're getting there*.
+
+--
+
+* If using UDP Services - double-check everything.
+--
+
+* MetalLB:
+    * Not a silver bullet yet.
+    * Try if fed up with Octavia.
+
+---
+
 # cloud-provider-openstack
 
 ## How to use, how to contribute
