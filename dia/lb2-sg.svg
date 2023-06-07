@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="36cm" height="27cm" viewBox="-62 358 707 523" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffff00" x="-60" y="580" width="113.1" height="80"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-60" y="580" width="113.1" height="80"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:700" x="-3.45" y="624.39">
+      <tspan x="-3.45" y="624.39">Loadbalancer</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #1e90ff" x="281.05" y="360" width="363" height="120"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="281.05" y="360" width="363" height="120"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="462.55" y="425.683">
+      <tspan x="462.55" y="425.683"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffc0cb" x="261.05" y="380" width="129" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="261.05" y="380" width="129" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:700" x="325.55" y="403.39">
+      <tspan x="325.55" y="403.39">NodePort</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #1e90ff" x="281.05" y="560" width="363" height="120"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="281.05" y="560" width="363" height="120"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="462.55" y="625.683">
+      <tspan x="462.55" y="625.683"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffc0cb" x="261.05" y="580" width="129" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="261.05" y="580" width="129" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:700" x="325.55" y="603.39">
+      <tspan x="325.55" y="603.39">NodePort</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #1e90ff" x="281.05" y="760" width="363" height="120"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="281.05" y="760" width="363" height="120"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="462.55" y="825.683">
+      <tspan x="462.55" y="825.683"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffc0cb" x="261.05" y="780" width="129" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="261.05" y="780" width="129" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:700" x="325.55" y="803.39">
+      <tspan x="325.55" y="803.39">NodePort</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="53.1" y1="580" x2="220.003" y2="437.119"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="67.7465" y1="574.043" x2="53.6467" y2="572.95"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="205.356" y1="443.076" x2="219.456" y2="444.169"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x1="53.1" y1="620" x2="220.003" y2="620"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x1="46.2385" y1="660.82" x2="220.015" y2="803.582"/>
+  <g>
+    <rect style="fill: #90ee90" x="461.05" y="600" width="80" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="461.05" y="600" width="80" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:700" x="501.05" y="624.39">
+      <tspan x="501.05" y="624.39">Pod</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #90ee90" x="461.05" y="800" width="80" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="461.05" y="800" width="80" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:700" x="501.05" y="824.39">
+      <tspan x="501.05" y="824.39">Pod</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x1="391.048" y1="809.04" x2="462.55" y2="820"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x1="390.05" y1="599" x2="462.55" y2="620"/>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:Montserrat;font-style:normal;font-weight:700" x="61.05" y="500">
+    <tspan x="61.05" y="500">Disabled by health monitor</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffa500" x="261.05" y="620" width="129" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="261.05" y="620" width="129" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:700" x="325.55" y="643.39">
+      <tspan x="325.55" y="643.39">HealthCheck</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffa500" x="261.05" y="420" width="129" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="261.05" y="420" width="129" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:700" x="325.55" y="443.39">
+      <tspan x="325.55" y="443.39">HealthCheck</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffa500" x="261.05" y="820" width="129" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="261.05" y="820" width="129" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:700" x="325.55" y="843.39">
+      <tspan x="325.55" y="843.39">HealthCheck</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffff00" x="-38.95" y="780" width="120.75" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-38.95" y="780" width="120.75" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:700" x="21.425" y="803.39">
+      <tspan x="21.425" y="803.39">Healthmonitor</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="2.24799" y1="661.003" x2="18.6496" y2="779.029"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffa500" x1="21.425" y1="780" x2="220.016" y2="452.915"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffa500" x1="45.8119" y1="779.029" x2="220.016" y2="636.366"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffa500" x1="82.8058" y1="804.897" x2="220.016" y2="818.08"/>
+  <g>
+    <path style="fill: #000000" d="M 431.441 720.938 C 437.378,720.938 441.753,716.562 441.753,710.312 C 441.753,704.062 437.378,700 431.441,700 C 425.503,700 421.128,704.062 421.128,710.312 C 421.128,716.562 425.503,720.938 431.441,720.938 L 431.441,720.938z"/>
+    <path style="fill: #000000" d="M 460.191 720.938 C 466.128,720.938 470.816,716.562 470.816,710.312 C 470.816,704.062 466.128,700 460.191,700 C 454.253,700 449.878,704.062 449.878,710.312 C 449.878,716.562 454.253,720.938 460.191,720.938 L 460.191,720.938z"/>
+    <path style="fill: #000000" d="M 488.941 720.938 C 494.878,720.938 499.566,716.562 499.566,710.312 C 499.566,704.062 494.878,700 488.941,700 C 483.316,700 478.628,704.062 478.628,710.312 C 478.628,716.562 483.316,720.938 488.941,720.938 L 488.941,720.938z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke-linecap: round; stroke: #000000" d="M 431.441 720.938 C 437.378,720.938 441.753,716.562 441.753,710.312 C 441.753,704.062 437.378,700 431.441,700 C 425.503,700 421.128,704.062 421.128,710.312 C 421.128,716.562 425.503,720.938 431.441,720.938 L 431.441,720.938"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke-linecap: round; stroke: #000000" d="M 460.191 720.938 C 466.128,720.938 470.816,716.562 470.816,710.312 C 470.816,704.062 466.128,700 460.191,700 C 454.253,700 449.878,704.062 449.878,710.312 C 449.878,716.562 454.253,720.938 460.191,720.938 L 460.191,720.938"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke-linecap: round; stroke: #000000" d="M 488.941 720.938 C 494.878,720.938 499.566,716.562 499.566,710.312 C 499.566,704.062 494.878,700 488.941,700 C 483.316,700 478.628,704.062 478.628,710.312 C 478.628,716.562 483.316,720.938 488.941,720.938 L 488.941,720.938"/>
+  </g>
+  <g>
+    <g>
+      <rect style="fill: #ff0000" x="220" y="360" width="40" height="120"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke-linecap: round; stroke: #ff0000" x="220" y="360" width="40" height="120"/>
+    </g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-linecap: round; stroke: #000000" x="220" y="360" width="40" height="120"/>
+    <text font-size="12.7998" style="fill: #ffffff;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:700" x="240" y="424.39">
+      <tspan x="240" y="424.39">SG</tspan>
+    </text>
+  </g>
+  <g>
+    <g>
+      <rect style="fill: #ff0000" x="220" y="560" width="40" height="120"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke-linecap: round; stroke: #ff0000" x="220" y="560" width="40" height="120"/>
+    </g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-linecap: round; stroke: #000000" x="220" y="560" width="40" height="120"/>
+    <text font-size="12.7998" style="fill: #ffffff;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:700" x="240" y="624.39">
+      <tspan x="240" y="624.39">SG</tspan>
+    </text>
+  </g>
+  <g>
+    <g>
+      <rect style="fill: #ff0000" x="220" y="760" width="40" height="120"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke-linecap: round; stroke: #ff0000" x="220" y="760" width="40" height="120"/>
+    </g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-linecap: round; stroke: #000000" x="220" y="760" width="40" height="120"/>
+    <text font-size="12.7998" style="fill: #ffffff;text-anchor:middle;font-family:Montserrat;font-style:normal;font-weight:700" x="240" y="824.39">
+      <tspan x="240" y="824.39">SG</tspan>
+    </text>
+  </g>
+</svg>

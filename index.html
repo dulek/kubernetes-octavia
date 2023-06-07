@@ -279,6 +279,7 @@ Source: https://opendev.org/openstack/octavia/src/branch/master/octavia/api/root
 
 # Other LoadBalancer options
 ## `sessionAffinity`
+--
 
 * Implemented using `session_persistence` on pool set to `SOURCE_IP`.
 --
@@ -287,10 +288,14 @@ Source: https://opendev.org/openstack/octavia/src/branch/master/octavia/api/root
 --
 
   * But it's implementable in OVN too!
+--
+
+      * *COMING SOON!*
 
 --
 
 ## `loadBalancerSourceRanges`
+--
 
 * Implemented using `allowed_cidrs` on listeners.
 	* Supported since v2.12 (Train).
@@ -307,12 +312,70 @@ Source: https://opendev.org/openstack/octavia/src/branch/master/octavia/api/root
 # manage-security-groups
 ## cloud-provider-openstack option
 
-TODO
+.left-column[![LB](dia/lb1-sg.svg)]
+--
+
+.right-column[
+* No SG management:
+  * Open NodePort range on each (30000-32767)
+      * Amphora: Nodes subnet
+      * OVN: **0.0.0.0/0**
+]
+
+---
+
+# manage-security-groups
+## cloud-provider-openstack option
+
+.left-column[![LB](dia/lb2-sg.svg)]
+
+.right-column[
+* No SG management:
+  * Open NodePort range on each (30000-32767)
+      * Amphora: Nodes subnet
+      * OVN: **0.0.0.0/0**
+* `manage-security-groups`:
+  * cloud-provider-openstack:
+      * Creates SG per LB Service.
+      * Opens only required port**s**.
+      * Assigns it to nodes.
+]
+
+---
+
+# manage-security-groups
+## cloud-provider-openstack option
+
+.left-column[![LB](dia/lb2-sg.svg)]
+
+.right-column[
+* `manage-security-groups` with **OVN WiP**:
+  * Currently broken with OVN as it opens Nodes range.
+  * Option to implement `loadBalancerSourceRanges`.
+]
 
 ---
 
 # MetalLB
 ## A viable alternative?
+
+https://that.guru/blog/deploying-metallb-on-openstack-part-1/
+
+https://that.guru/blog/deploying-metallb-on-openstack-part-2/
+--
+
+.left-column[</br>![MetalLB](assets/metallb.png)]
+
+--
+
+.right-column[
+* MetalLB spoofs source IP address
+* allowed-address-pairs will block this
+* Options:
+    * Disable port security
+    * Configure allowed-address-pairs dynamically
+    * Use a secondary port firewalled differently
+]
 
 ---
 
