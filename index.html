@@ -304,7 +304,7 @@ Source: https://opendev.org/openstack/octavia/src/branch/master/octavia/api/root
 # manage-security-groups
 ## cloud-provider-openstack option
 
-.left-column[![LB](dia/lb1-sg.svg)]
+.left-column[![LB](excalidraw/lb7.png)]
 --
 
 .right-column[
@@ -319,7 +319,7 @@ Source: https://opendev.org/openstack/octavia/src/branch/master/octavia/api/root
 # manage-security-groups
 ## cloud-provider-openstack option
 
-.left-column[![LB](dia/lb2-sg.svg)]
+.left-column[![LB](excalidraw/lb7.png)]
 
 .right-column[
 * No SG management:
@@ -338,7 +338,7 @@ Source: https://opendev.org/openstack/octavia/src/branch/master/octavia/api/root
 # manage-security-groups
 ## cloud-provider-openstack option
 
-.left-column[![LB](dia/lb2-sg.svg)]
+.left-column[![LB](excalidraw/lb7.png)]
 
 .right-column[
 * `manage-security-groups` with **OVN WiP**:
@@ -378,11 +378,13 @@ https://that.guru/blog/deploying-metallb-on-openstack-part-2/
 
 * Amphora:
     * High resource consumption.
-    * K8s compatibility.
+    * Good K8s compatibility.
 --
 * OVN:
     * Fast, low resource consumption.
-    * K8s compatibility is *we're getting there*.
+    * K8s compatibility is *we're getting there*:
+        * Main issues around safe SG management.
+        * UDP services.
 
 --
 
