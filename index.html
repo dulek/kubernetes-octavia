@@ -52,11 +52,21 @@ OpenInfra Summit Vancouver, 14.07.2023<br />
 
 Slides available at: **https://dulek.github.io/kubernetes-octavia**
 
+???
+
+* We've spent time validating cloud-provider-openstack with Octavia.
+* This presentation shares our experiences.
+
 ---
 
 template: section_layout
 
 What I'll talk about?
+
+???
+
+* Only about `type=LoadBalancer` Services.
+* MetalLB
 
 ---
 
@@ -64,11 +74,22 @@ template: section_layout
 
 What I won't talk about?
 
+???
+
+* No octavia-ingress-controller even though it's a part of cloud-provider-openstack.
+* No CAPO API LB integration.
+* All because I don't have as much experience.
+
 ---
 
 template: section_layout
 
 <span style="font-weight: normal">**in-tree** vs **out-of-tree**</span>
+
+???
+
+* Split a while ago.
+* Easy to use in-tree, you might be tempted.
 
 ---
 
@@ -97,14 +118,14 @@ template: section_layout
 --
 
 * Missing features:
-  * Fully populated LB creation
-  * Health monitors support
+  * **Fully populated LB creation**
+  * **Health monitors support**
   * Cascade delete
   * Configurable timeouts
 
 ---
 # Octavia
-## Primer
+## Backends a.k.a. providers
 
 .left-column[
 
@@ -115,6 +136,11 @@ template: section_layout
 * No source IP preservation
   * HTTP header or PROXY protocol can be used
 ]
+
+???
+* Octavia is not a perfect abstraction layer
+* "Providers" confusion
+
 --
 .right-column[
 ### OVN Octavia Provider
@@ -131,10 +157,13 @@ lb-method = SOURCE_IP_PORT
 ```
 ]
 
+???
+* There are more backends out there, like F5 provider.
+
 ---
 
 # LoadBalancer Services
-## LB setup
+## Load balancer setup
 
 .left-column[![LB1](excalidraw/lb1.png)]
 --
@@ -150,14 +179,14 @@ creation is a must!**
 ---
 
 # LoadBalancer Services
-## Simple, default case
+## Simple case
 
 .left-column[![LB2](excalidraw/lb2.png)]
 
 ---
 
 # LoadBalancer Services
-## Redirection, default case
+## Redirection, externalTrafficPolicy=Cluster (default)
 
 .left-column[![LB2](excalidraw/lb3.png)]
 
@@ -354,6 +383,11 @@ Source: https://opendev.org/openstack/octavia/src/branch/master/octavia/api/root
 https://that.guru/blog/deploying-metallb-on-openstack-part-1/
 
 https://that.guru/blog/deploying-metallb-on-openstack-part-2/
+
+???
+
+Had anyone tried MetalLB?
+
 --
 
 .left-column[</br>![MetalLB](assets/metallb.png)]
