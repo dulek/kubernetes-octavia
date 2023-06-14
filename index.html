@@ -403,18 +403,19 @@ Had anyone tried MetalLB?
 
 --
 
-.left-column[</br>![MetalLB](assets/metallb.png)]
+.left-column[
+* L2 mode does not load balance, BGP mode breaks on members list change.
+* MetalLB spoofs source IP address
+    * allowed-address-pairs will block this
+    * Options:
+        * Disable port security
+        * Set allowed-address-pairs dynamically
+        * Use a secondary port firewalled differently
+]
 
 --
 
-.right-column[
-* MetalLB spoofs source IP address
-* allowed-address-pairs will block this
-* Options:
-    * Disable port security
-    * Configure allowed-address-pairs dynamically
-    * Use a secondary port firewalled differently
-]
+.right-column[</br>![MetalLB](assets/metallb.png)]
 
 ---
 
@@ -435,8 +436,8 @@ Had anyone tried MetalLB?
         * UDP services issues.
 --
 * MetalLB:
-    * Not a silver bullet yet.
-    * Try if fed up with Octavia.
+    * Has it's own problems and limitations.
+    * Option if you don't have Octavia in the env?
 
 ---
 
@@ -449,14 +450,28 @@ Had anyone tried MetalLB?
 </tr>
 </thead>
 <tbody>
+<tr class="row-even"><td>Rocky</td>
+<td>UDP Services in Amphora</td>
+</tr>
+<tr class="row-even"><td>Stein</td>
+<td>UDP support in OVN</td>
+</tr>
 <tr class="row-even"><td>Train</td>
-<td>`loadBalancerSourceRanges` for Amphora</td>
+<td>`loadBalancerSourceRanges` for Amphora<br/>
+Mixing UDP/TCP in OVN
+</td>
 </tr>
 <tr class="row-odd"><td>Ussuri</td>
 <td>Safe UDP Services monitoring with ETP=Local</td>
 </tr>
+<tr class="row-odd"><td>Victoria</td>
+<td>SCTP protocol with Amphora</td>
+</tr>
 <tr class="row-even"><td>Wallaby</td>
-<td>ETP=Local with OVN (healthmonitors)</td>
+<td>
+ETP=Local with OVN (healthmonitors)<br/>
+SCTP support in OVN
+</td>
 </tr>
 </tbody>
 </table>
@@ -468,8 +483,7 @@ Had anyone tried MetalLB?
 * OVNs `limited` support for `sessionAffinity`.
 * Improvements to `manage-security-group` option.
   * Fixes (rule delete, SG apply to new nodes).
-  * OVN support.
-  * `loadBalancerSourceRanges` implementation for OVN.
+  * OVN support and `loadBalancerSourceRanges` implementation for OVN.
 
 ---
 
