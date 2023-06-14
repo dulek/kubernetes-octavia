@@ -131,10 +131,12 @@ template: section_layout
 
 ### Amphora Provider
 * Reference implementation
-* Each LB is a VM with HAProxy
-* Slow to create or update
+* Amphora LBs are VMs with HAProxy and Linux Virtual Server (LVS) load
+  balancing engines.
+* Slower to create
 * No source IP preservation
   * HTTP header or PROXY protocol can be used
+* *Lot more features.*
 ]
 
 ???
@@ -148,7 +150,7 @@ template: section_layout
 * LBs implemented using underlying Neutron OVN instance
 * Fast to configure
 * Source IP preservation by default
-* Functional gaps
+* Functional gaps even in CPO context
 
 ```ini
 [LoadBalancer]
@@ -238,6 +240,7 @@ creation is a must!**
 ---
 
 # Octavia API versions
+## These are not microversions!
 
 <table border="1">
 <thead>
@@ -272,6 +275,10 @@ creation is a must!**
 
 Source: https://opendev.org/openstack/octavia/src/branch/master/octavia/api/root_controller.py
 
+???
+
+* These aren't microversions!
+
 ---
 
 # Octavia healthmonitors
@@ -305,13 +312,19 @@ Source: https://opendev.org/openstack/octavia/src/branch/master/octavia/api/root
 * Implemented using `session_persistence` on pool set to `SOURCE_IP`.
 --
 
-  * **Only works with Amphora!**
+  * Only works with Amphora, *kinda* coming to OVN.
+
+???
+
+* OVN session peristence is worse than Amphora's, member list changes affect
+  sessions, timeout is local to a compute node.
+
 --
 
-  * But it's implementable in OVN too!
---
+## `loadbalancer.openstack.org/connection-limit`
+## `loadbalancer.openstack.org/timeout-*`
 
-      * *COMING SOON!*
+* OVN?
 
 --
 
@@ -413,6 +426,7 @@ Had anyone tried MetalLB?
 * Amphora:
     * High resource consumption.
     * Good K8s compatibility.
+    * Richer feature base even in CPO context.
 --
 * OVN-Octavia:
     * Fast, low resource consumption.
@@ -451,7 +465,7 @@ Had anyone tried MetalLB?
 
 # Coming soon
 
-* OVNs support for `sessionAffinity`.
+* OVNs `limited` support for `sessionAffinity`.
 * Improvements to `manage-security-group` option.
   * Fixes (rule delete, SG apply to new nodes).
   * OVN support.
