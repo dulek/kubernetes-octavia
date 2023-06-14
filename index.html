@@ -414,30 +414,61 @@ Had anyone tried MetalLB?
     * High resource consumption.
     * Good K8s compatibility.
 --
-* OVN:
+* OVN-Octavia:
     * Fast, low resource consumption.
     * K8s compatibility is *we're getting there*:
         * Main issues around safe SG management.
-        * UDP services.
-
+        * UDP services issues.
 --
-
-* If using UDP Services - double-check everything.
---
-
 * MetalLB:
     * Not a silver bullet yet.
     * Try if fed up with Octavia.
 
 ---
 
-# cloud-provider-openstack
+# Compatibility Matrix
 
-## How to use, how to contribute
-
-### Kubernetes on OpenStack Forum Session on Thursday at 2 PM!
+<table border="1">
+<thead>
+<tr class="row-odd"><th class="head">OpenStack version</th>
+<th class="head">Feature</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td>Train</td>
+<td>`loadBalancerSourceRanges` for Amphora</td>
+</tr>
+<tr class="row-odd"><td>Ussuri</td>
+<td>Safe UDP Services monitoring with ETP=Local</td>
+</tr>
+<tr class="row-even"><td>Wallaby</td>
+<td>ETP=Local with OVN (healthmonitors)</td>
+</tr>
+</tbody>
+</table>
 
 --
+
+# Coming soon
+
+* OVNs support for `sessionAffinity`.
+* Improvements to `manage-security-group` option.
+  * Fixes (rule delete, SG apply to new nodes).
+  * OVN support.
+  * `loadBalancerSourceRanges` implementation for OVN.
+
+---
+
+# Forum session
+
+**Kubernetes on OpenStack Forum Session on Thursday at 2:30 PM!**
+**https://etherpad.opendev.org/p/openinfra-2023-kubernetes-on-openstack**
+<br/><br/>
+![CC](assets/session.png)
+
+--
+
+# How to use, how to contribute
 
 * Code: https://github.com/kubernetes/cloud-provider-openstack
 * Documentation: https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs
